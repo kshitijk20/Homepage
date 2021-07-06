@@ -12,7 +12,8 @@ nav {
         height:80px;
         width:100%;
         background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('../assets/2.jpg');
-         border-bottom: 1px solid white;
+        border-bottom: 1px solid white;
+      
 }
 nav a{
     color:aliceblue;
@@ -33,7 +34,6 @@ nav li{
      display:inline-block;
      margin: 0 8px;
      line-height: 80px;
-
 }
 nav a{
     color:white;
@@ -50,7 +50,7 @@ a:hover{
       border-color: #f1f55c;
       color:white;
       box-shadow: 0 0.5em 0.5em -0.4em #f1f55c;
-      transform: translateY(-0.50em);
+      transform: translateY(0.50em);
       cursor:pointer;
 }
 nav #icon{
@@ -66,6 +66,12 @@ nav #icon{
     .logo img{
         padding-top:10px;
     }
+    h1{
+        display: none;
+    }
+   {
+       display:none;
+   }
    nav ul{
        margin-right: 20px;
    }
@@ -82,11 +88,12 @@ nav ul{
     position:fixed;
     width: 100%;
     height:100vh;
-    background:#2f3640 ;
+    background:url("../assets/2.jpg") ;
     top:80px;
     left:-100%;
     text-align: center;
     transition: all .5s;
+    border-top: 1px solid white;
 }
 nav li{
     display:block;
@@ -95,6 +102,9 @@ nav li{
 }
 nav a{
     font-size:20px;
+    border: 1px solid transparent;
+    background-color: black;
+    color:cyan;
 }
 a:hover{
     border:none;
@@ -105,8 +115,36 @@ nav ul.show{
 }
 }
 section{
+    width:100%;
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('../assets/2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height:88.7vh;
+}
+.name{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    border:1px solid transparent;
+   
+}
+h1:hover{
+   color: bisque;
+   cursor:pointer;
+}
+.btn{
+    position:relative;
+    top:55%;
+    left:45%;
 }
