@@ -5,12 +5,13 @@
     text-decoration: none;
     list-style:none;
 }
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
 main{
     max-width: 100%;
     margin:auto;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Rajdhani', sans-serif;
 }
 nav {
         height:80px;
@@ -107,13 +108,17 @@ nav li{
 }
 nav a{
     font-size:20px;
-    border: 1px solid transparent;
-    background-color: black;
-    color:cyan;
+    border: 2px solid white;
+    padding: 10px 30px;
+    color:white;
+    text-decoration: none;
+    transform:translate(-50%,-50%);
+    transition: 0.5s ease-in-out;
 }
 a:hover{
+    background-color: black;
     border:none;
-    color:#3498db;
+    color:white;
 }
 nav ul.show{
     left:0;
@@ -130,28 +135,41 @@ section{
 .name{
     position:absolute;
     top:45%;
-    left:51%;
-    transform:translate(-50%,-50%);
-
-
+    left:31%;
 }
 h1{
-    font-size: 5rem;
-    color: rgb(241, 241, 236);
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    top:50%;
+    font-size: 5em;
+    font-weight: 500;
+    color:#fff;
+    letter-spacing: 5px;
+    font-family: 'Rajdhani',Arial, Helvetica, sans-serif;
+    cursor: pointer;
     text-align: center;
-    border:1px solid transparent;
    
 }
-h1:hover{
-   color: bisque;
-   cursor:pointer;
+h1 span{
+    transition:0.5s ;
+}
+h1:hover span:nth-child(1){
+   margin-right: 10px;
+}
+h1:hover span:nth-child(3){
+    margin-left: 40px;
+ }
+h1:hover span{
+    color:#fff;
+    text-shadow: 0 0 10px rgb(255, 48, 11),
+                 0 0 20px rgb(238, 10, 10),
+                 0 0 40px rgb(173, 105, 105),
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
 }
 .button {
     position:absolute;
     top:80%;
-    left:50%;
+    left:49%;
     transform:translate(-50%,-50%);
 }
 .btn{
