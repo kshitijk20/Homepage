@@ -5,6 +5,10 @@
     text-decoration: none;
     list-style:none;
 }
+main{
+    max-width: 100%;
+    margin:auto;
+}
 body{
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -38,6 +42,7 @@ nav li{
 nav a{
     color:white;
     font-size: 18px;
+    transform:translate(-50%,-50%);
    /* text-transform: uppercase;*/
     border: 1px solid transparent;
     padding:7px 10px;
@@ -69,7 +74,7 @@ nav #icon{
     h1{
         display: none;
     }
-   {
+   button{
        display:none;
    }
    nav ul{
@@ -125,15 +130,15 @@ section{
 .name{
     position:absolute;
     top:45%;
-    left:50%;
+    left:51%;
     transform:translate(-50%,-50%);
 
 
 }
 h1{
-    font-size: 4rem;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    color: rgb(241, 241, 236);
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: lighter;
     text-align: center;
     border:1px solid transparent;
@@ -143,8 +148,21 @@ h1:hover{
    color: bisque;
    cursor:pointer;
 }
+.button {
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
 .btn{
-    position:relative;
-    top:55%;
-    left:45%;
+        border: 2px solid white;
+        padding:10px 30px;
+        color: white;
+        text-decoration:none;
+        transition: 1s ease-in-out;
+        margin: 5px;
+}
+.btn:hover{
+    background-color: black;
+    color:white;
 }
